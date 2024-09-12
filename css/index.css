@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 30px;
+    border: 1px solid #333;
+}
+
+body {
+    background:#333;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+h1, h2, h3, h4, a {
+    font-family: "Tiny5", sans-serif;
+}
+
+.leftHeader {
+    list-style:none;
+    float:left;
+    padding: 0;
+}
+.leftHeader li{
+    position:relative;
+    list-style:none;
+}
+.leftHeader li a{
+    color:#fff; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+.leftHeader li a:hover{
+    background:#333;
+    color:red;
+    box-shadow: none;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #333;
+}
+.leftHeader li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:red;
+    display:none;
+    padding: 0;
+}
+.leftHeader li:hover ul, .menu li.over ul{
+    display:block;
+}
+.leftHeader li ul li{
+    display:block;
+    width:150px;
+}
+
+.li-libertadores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoUEFA {
+    width: 100%;
+}
+.logoLibertadores {
+    width: 100%;
+}
+
+.centerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerHeader a{
+    width: 25%;
+}
+.logoFHF {
+    width: 100%;
+}
+
+.rightHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0.5%;
+}
+.rightHeader a{
+    width: 46px;
+}
+.hubbe{
+    width: 100%;
+}
+.discord{
+    color: white;
+}
+
+.principal {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px; 
+    padding-top: 8vh;
+    padding-bottom: 5px;
+}
+
+main {
+    flex: 1;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+.manchete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px #ffee00 solid;
+}
+.subTitulo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-top: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+}
+
+.seçoes{
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px;
+}
+.seçoes p {
+    font-size: 15pt;
+}
+.seçoes h2 {
+    color: red;
+}
+.manchete h1 {
+    color: #f8ed4e;
+    box-shadow: none;
+    text-shadow:0px 0px 5px #ffee00;
+}
+.seçao1{
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.imagem1{
+    width: 100%;
+    border-bottom: #fff 1px solid;
+    padding-bottom: 5%;
+}
+.imagem2 {
+    width: 100%;
+}
+
+.seçao2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.noticia3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miniSeçao{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.noticia4 .noticia5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagemNoticia5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.imagemNoticia5 h2 {
+    color: white;
+    box-shadow: none;
+    text-shadow:0px 0px 5px #CCC;
+}
+
+.rodapé {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px #ffee00 solid;
+}
+.rodapé h4{
+    color: #ffee00;
+    box-shadow: none;
+    text-shadow:0px 0px 5px #ffee00;
+}
+
+aside {
+    flex: 0 0 9%;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+.youtube{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playlists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.tituloFHFTV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+}
+footer a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: royalblue;
+    box-shadow: none;
+    text-shadow:0px 0px 5px rgb(0, 64, 255);
+}

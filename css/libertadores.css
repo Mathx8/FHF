@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 30px;
+    border: 1px solid #333;
+}
+
+body {
+    background:#333;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+h1, h2, h3, h4, a {
+    font-family: "Tiny5", sans-serif;
+}
+
+.leftHeader {
+    list-style:none;
+    float:left;
+    padding: 0;
+}
+.leftHeader li{
+    position:relative;
+    list-style:none;
+}
+.leftHeader li a{
+    color:#fff; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+.leftHeader li a:hover{
+    background:#333;
+    color:red;
+    box-shadow: none;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #333;
+}
+.leftHeader li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:red;
+    display:none;
+    padding: 0;
+}
+.leftHeader li:hover ul, .menu li.over ul{
+    display:block;
+}
+.leftHeader li ul li{
+    display:block;
+    width:150px;
+}
+
+.logoUEFA {
+    width: 100%;
+}
+.logoLibertadores {
+    width: 100%;
+}
+
+.centerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerHeader a{
+    width: 25%;
+}
+.logoFHF {
+    width: 100%;
+}
+
+.rightHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0.5%;
+}
+.rightHeader a{
+    width: 46px;
+}
+.hubbe{
+    width: 100%;
+}
+.discord{
+    color: white;
+}
+
+.principal {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; 
+    padding-top: 8vh;
+    padding-bottom: 5px;
+}
+
+main {
+    flex: 1;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+.faseGrupos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grupos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.grupoA, .grupoB {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #555;
+    padding: 2px;
+}
+table {
+    width: 100%;
+    letter-spacing: 1px;
+}
+th, td {
+    border-top: 1px solid #CCC;
+    padding: 4px 6px;
+    text-align: center;
+}
+th {
+    font-family: "Tiny5", sans-serif;
+    background-color: #444;
+    color: white;
+    box-shadow: none;
+    text-shadow:0px 0px 5px #CCC;
+}
+.classificação, .classificado, .classificaçãoTime, .classificaçãoTimeClassificado{
+    text-align: start;
+}
+.classificaçãoTime{
+    padding-right: 30px;
+}
+.classificado, .classificaçãoTimeClassificado {
+    color: #f8ed4e;
+    box-shadow: none;
+    text-shadow:0px 0px 5px #ffee00;
+}
+
+.eliminatorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chaveamento {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+}
+.semifinal{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.semi1, .semi2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #444;
+}
+.time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+.timeClassificado{
+    color: #f8ed4e;
+    box-shadow: none;
+    text-shadow:0px 0px 5px #ffee00;
+}
+.time div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.time img {
+    width: 42px;
+    height: 50px;
+}
+.time h3 {
+    background-color: #555;
+    border: 1px solid #CCC;
+    padding: 4px 6px;
+}
+.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #444;
+}
+.campeão {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #444;
+}
+.botafogocampeao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.botafogocampeao img {
+    width: 20%;
+}
+.semi1 h1, .semi2 h1, .final h1{
+    color: rgb(255, 37, 37);
+    box-shadow: none;
+    text-shadow:0px 0px 5px red;
+}
+.campeão h1 {
+    color: #f8ed4e;
+    box-shadow: none;
+    text-shadow:0px 0px 5px #ffee00;
+}
+
+aside {
+    flex: 0 0 15%;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+.calendario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rodada1{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #555;
+    margin: 15px; 
+}
+#rodada2, #rodada3, #rodada4, #rodada5, #rodada6{
+    width: 95%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #555;
+    margin: 15px;  
+}
+.menuRodada{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bloqueiaCursor{
+    cursor: not-allowed;
+}
+.jogo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: #CCC 1px solid;
+    gap: 10px;
+}
+.equipe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.equipe img{
+    width: 80px;
+    height: 96px;
+}
+
+footer {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+}
+footer h4{
+    margin-right: 10px;
+    color: royalblue;
+    box-shadow: none;
+    text-shadow:0px 0px 5px rgb(0, 64, 255);
+}
