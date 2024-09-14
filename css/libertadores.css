@@ -322,9 +322,35 @@ footer {
     align-items: center;
     background-color: #333;
 }
-footer h4{
+footer a{
+    text-decoration: none;
     margin-right: 10px;
     color: royalblue;
     box-shadow: none;
     text-shadow:0px 0px 5px rgb(0, 64, 255);
+}
+
+@media (max-width: 768px) {
+    .seçoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .principal {
+        flex-direction: column;
+    }
+    .grupos{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .chaveamento{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .chaveamento h1, .chaveamento h2, .chaveamento h3, .chaveamento h4{
+        font-size: small;
+    }
+    .semifinal{
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }

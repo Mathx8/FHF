@@ -243,7 +243,7 @@ aside {
 }
 .playlists {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
@@ -268,4 +268,14 @@ footer a{
     color: royalblue;
     box-shadow: none;
     text-shadow:0px 0px 5px rgb(0, 64, 255);
+}
+
+@media (max-width: 768px) {
+    .seçoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .principal {
+        flex-direction: column;
+    }
 }
