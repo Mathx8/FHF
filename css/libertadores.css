@@ -338,19 +338,39 @@ footer a{
     .principal {
         flex-direction: column;
     }
+    .leftHeader li ul li{
+        display:block;
+        width:75px;
+    }
+    .logoFHF {
+        width: 95%;
+    }
     .grupos{
         flex-direction: column;
         gap: 20px;
     }
+    .grupoA, .grupoB {
+        width: 100%;
+    }
+    table {
+        width: 95vw;
+    }
+    th, td {
+        padding: 0.5px 0.075px;
+    }
     .chaveamento{
+        width: 95vw;
         flex-direction: column;
         gap: 20px;
     }
     .chaveamento h1, .chaveamento h2, .chaveamento h3, .chaveamento h4{
-        font-size: small;
+        font-size: x-small;
     }
     .semifinal{
         flex-direction: row;
         justify-content: space-around;
+    }
+    .semi1, .semi2{
+        padding: 5px;
     }
 }

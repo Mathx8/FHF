@@ -278,4 +278,15 @@ footer a{
     .principal {
         flex-direction: column;
     }
+    .leftHeader li ul li{
+        display:block;
+        width:75px;
+    }
+    .logoFHF {
+        width: 95%;
+    }
+    .videos {
+        width: 95vw;
+        height: 40vw;
+    }
 }
